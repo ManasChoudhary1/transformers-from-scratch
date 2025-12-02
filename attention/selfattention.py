@@ -13,7 +13,7 @@ class selfattention(nn.Module):
        self.query = nn.Linear(d_in,d_out,device=device) ## d_in,d_out
        self.key = nn.Linear(d_in,d_out,device = device) ## d_in ,d_out
        self.value = nn.Linear(d_in,d_out, device = device) ## d_in,d_out
-       self.softmax = nn.Softmax(dim = 1 )
+       self.softmax = nn.Softmax(dim = -1 )
     def forward(self,X):
         qx = self.query(X)
         kx = self.key(X)
@@ -31,5 +31,5 @@ class selfattention(nn.Module):
         # applying softmax
         y = self.softmax(y)
         # y = (QK.T)@ V
-        y = y @ qx  
+        y = y @ vx  
         return y
