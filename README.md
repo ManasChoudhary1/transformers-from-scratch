@@ -1,4 +1,17 @@
-# transformers-from-scratch
-Building Transformers and all the related components from scratch.
-I will implement complete working Transformer pipelines from scratch. I'll also try to implement multiple interesting variations of the same components, like for attention,I'll implement Multihead Attention, with and without KV Cache, Multi Query attention, Multihead Latent attention etc. The main purpose of this repo is to learn about implementation details of Transformers and related architectures.
-I have decided to absolutely take 0 help from AI tools like chatgpt, gemini for making this repo, not even for the purpose of debugging. The reasons are trivial.
+# Transformers From Scratch
+Building Transformers and their components from the ground up.
+
+This repository contains complete, working Transformer pipelines implemented from scratch. The goal is to explore the implementation details of the architecture by manually coding interesting variations of core components—such as Multi-Head Attention, KV Caching, Multi-Query Attention, and Multi-Head Latent Attention.
+
+# Structure
+Each component includes:
+**Notebooks**: Demos and theoretical explanations.
+**Python Modules**: Modular code intended for integration into full models.
+
+### Currently Implemented
+
+1. Attention:
+
+- Self-Attention
+- Multi-Head Attention
+- Multi-Head Attention (with KV Cache)
