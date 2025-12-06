@@ -1,3 +1,6 @@
+## Note :
+Currently am working on a kaggle competition, so will continue to build this when done with that.
+
 # Transformers From Scratch
 Building Transformers and their components from the ground up.
 
